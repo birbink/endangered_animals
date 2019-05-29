@@ -9,11 +9,55 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
  
  <link href="https://fonts.googleapis.com/css/family=Montserrat" rel="stylesheet">
- <link rel="stylesheet" type="text/css" href="https://aditidam.github.io/LearnProgramming/button.css">
+
  
 </head>
 
 <style>
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* Styles the dropdown button */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  font-size: 15px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Styles the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #93ffde;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ 
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #777BD4;}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -89,17 +133,19 @@ color:white;
 
 <div>
 <div class="dropdown">
-  <button class="dropbtn">Lessons</button>
+  <button class="dropbtn">Learn</button>
   <div class="dropdown-content">
-    <a href="#">Introduction</a>
-    <a href="https://aditidam.github.io/LearnProgramming/lessons/Variables.html"> Variables </a>
-    <a href="#">Java Math </a>
-     <a href="#">Boolean Logic </a>
-      <a href="#">if-statements </a>
+    <a href="#">Amphibians</a>
+    <a href=""> Birds</a>
+     <a href="#">Insects and Arachnids</a>
+     <a href="#">Mammals</a>
+      <a href="#">Ocean Creatures</a>
+      <a href="#">Reptiles </a>
      
   </div>
   </div> 
-  
+ 
+<a href="#" class="button">What You Can Do</a>
 <a href="#" class="button">Quiz</a>
 <a href="#" class="button">Play</a>
 <a href="#" class="button">Contact</a>
